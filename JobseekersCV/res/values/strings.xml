@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jobseekers CV</string>
+    <string name="nameField_hint">Фамилия Имя Отчество</string>
+
+    <string-array name="gender_array">
+        <item>муж</item>
+        <item>жен</item>
+    </string-array>
+
+    <string name="positionField_hint">Желаемая должность</string>
+    <string name="paymentField_hint">Желаемая зарплата</string>
+    <string name="emailField_hint">e-mail</string>
+    <string name="sendCVButton_hint">Отправить резюме</string>
+    <string name="dateField_hint">Дата рождения</string>
+    <string name="genderChoser_prompt">Пол</string>
+    <string name="phoneField_hint">Телефон</string>
+    <string name="title_activity_activity_2">Activity_2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="responseField_hint">Ответ соискателю</string>
+	<string name="sendResponceButton_hint">Отправить ответ</string>
+</resources>

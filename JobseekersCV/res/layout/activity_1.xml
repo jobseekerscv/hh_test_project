@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity_1" >
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nameField_hint"
+        android:inputType="textPersonName|textCapWords"
+        android:singleLine="true" />
+
+    <Spinner
+        android:id="@+id/genderChoser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nameField"
+        android:baselineAligned="false"
+        android:entries="@array/gender_array"
+        android:prompt="@string/genderChoser_prompt" />
+
+    <TextView
+        android:id="@+id/dateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/genderChoser"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/genderChoser"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hint="@string/dateField_hint"
+        android:onClick="showDatePickerDialog"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/positionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderChoser"
+        android:ems="10"
+        android:hint="@string/positionField_hint"
+        android:inputType="textCapSentences"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/paymentField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/positionField"
+        android:ems="10"
+        android:hint="@string/paymentField_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentField"
+        android:ems="10"
+        android:hint="@string/emailField_hint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailField"
+        android:ems="10"
+        android:hint="@string/phoneField_hint"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/sendCVButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sendCVButton_hint" 
+        android:onClick="sendMessage"/>
+
+</RelativeLayout>
